@@ -9,6 +9,10 @@ class PaintBrush extends Frame implements MouseListener, MouseMotionListener
 		setVisible(true);
 		addMouseListener(this);
 		addMouseMotionListener(this);
+		
+		addWindowListener(new WindowAdapter() {
+      		public void windowClosing(WindowEvent e) { dispose(); }
+       	});
 	}
 	public void mouseMoved(MouseEvent me)
 	{

@@ -21,19 +21,19 @@ public class ButtonDemo1 extends Frame {
 		
 		yes.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent ae) {
-				msg = "You presses Yes.";
+				msg = "You pressed Yes.";
 				result.setText(msg);
 			}
 		});
 		no.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent ae) {
-				msg = "You presses No.";
+				msg = "You pressed No.";
 				result.setText(msg);
 			}
 		});
 		maybe.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent ae) {
-				msg = "You presses Maybe.";
+				msg = "You pressed Maybe.";
 				result.setText(msg);
 			}
 		});

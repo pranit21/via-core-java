@@ -1,29 +1,27 @@
 import java.awt.*;
 import java.awt.event.*;
-public class ButtonDemo extends Frame implements ActionListener {
+public class BorderLayoutDemo extends Frame implements ActionListener {
 	private Button yes, no, maybe;
 	private Label result;
 	private String msg = "";
 	
-	public ButtonDemo() {
+	public BorderLayoutDemo() {
 		setSize(600, 600);
 		
 		yes = new Button("Yes");
 		no = new Button("No");
 		maybe = new Button("Maybe");
 		result = new Label("Hello");
-		result.setPreferredSize(new Dimension(150, 50));
+		//result.setPreferredSize(new Dimension(150, 50));
 		
-		add(yes);
-		add(no);
-		add(maybe);
-		add(result);
+		add(yes, BorderLayout.NORTH);
+		add(no, BorderLayout.SOUTH);
+		add(maybe, BorderLayout.EAST);
+		add(result, BorderLayout.WEST);
 		
 		yes.addActionListener(this);
 		no.addActionListener(this);
 		maybe.addActionListener(this);
-		
-		//setLayout(new FlowLayout(FlowLayout.LEFT));
 		
 		setVisible(true);
 		
@@ -37,16 +35,16 @@ public class ButtonDemo extends Frame implements ActionListener {
 	public void actionPerformed(ActionEvent ae) {
 		String str = ae.getActionCommand();
 		if(str.equals("Yes")) {
-			msg = "You pressed Yes.";
+			msg = "You presses Yes.";
 		} else if(str.equals("No")) {
-			msg = "You pressed No.";
+			msg = "You presses No.";
 		} else if(str.equals("Maybe")) {
-			msg = "You pressed Maybe.";
+			msg = "You presses Maybe.";
 		}
 		result.setText(msg);
 	}
 	
 	public static void main(String[] args) {
-		new ButtonDemo();
+		new BorderLayoutDemo();
 	}
 }

@@ -7,10 +7,10 @@ import java.awt.Rectangle;
 import java.awt.Robot;
 import java.awt.Toolkit;
 import java.awt.Window;
+import java.awt.Frame;
 import java.awt.image.BufferedImage;
-import javax.swing.JFrame;
 
-public class Zoom extends JFrame implements Runnable {
+public class Zoom extends Frame implements Runnable {
 	Robot r;
 	Window wnd;
 	int w,h;

@@ -1,16 +1,24 @@
 // Anonymous inner class demo.
 import java.applet.*;
+import java.awt.*;
 import java.awt.event.*;
 /*
 <applet code="AnonymousInnerClassDemo" width=200 height=100>
 </applet>
 */
-public class AnonymousInnerClassDemo extends Applet {
-	public void init() {
+public class AnonymousInnerClassDemo extends Frame {
+	public AnonymousInnerClassDemo() {
+		setSize(600, 600);
+		setVisible(true);
+		
 		addMouseListener(new MouseAdapter() {
 			public void mousePressed(MouseEvent me) {
-				showStatus("Mouse Pressed");
+				System.out.println("Mouse Pressed");
 			}
 		});
+	}
+	
+	public static void main(String[] args) {
+		new AnonymousInnerClassDemo();
 	}
 }

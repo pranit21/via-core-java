@@ -11,7 +11,7 @@ class StringBufferDemo {
 		StringBuffer sb1 = new StringBuffer("I Java!");
 		sb1.insert(2, "like ");
 		System.out.println(sb1);
-		System.out.println(s.reverse());
+		System.out.println(sb1.reverse());
 		
 		StringBuffer sb2 = new StringBuffer("This is a test.");
 		sb2.delete(4, 7);

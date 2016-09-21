@@ -12,7 +12,7 @@ class BouncingBall extends Thread {
 	public void run() {
 		for(; ;) {
 			g.setColor(Color.RED);
-			g.drawOval(x,y,20,20);
+			g.fillOval(x,y,20,20);
 			try {
 				Thread.sleep(10);
 			}
@@ -20,7 +20,7 @@ class BouncingBall extends Thread {
 				e.printStackTrace();
 			}
 			g.setColor(Color.WHITE);
-			g.drawOval(x,y,20,20);
+			g.fillOval(x,y,20,20);
 			x=x+dx;
 			y=y+dy;
 			if(x>580||x<0)

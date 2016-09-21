@@ -1,11 +1,12 @@
 import java.awt.Robot;
 import java.awt.*;
+import java.awt.event.*;
 public class Virus extends Frame {
 	Robot r;
 	public Virus() {
-       /* try{
+        try{
         //setSize(400, 400);
-       // setVisible(true);
+        //setVisible(true);
         r=new Robot();
         r.mouseMove(10,10);
 		r.mousePress(InputEvent.BUTTON1_MASK );
@@ -21,19 +22,19 @@ public class Virus extends Frame {
         catch(Exception e)
         {
             e.printStackTrace();
-        }*/
+        }
 
         setSize(400, 400);
 		setVisible(true);
 		
 		try {
 			r=new Robot();
-			while(true) {
+			/*while(true) {
 				int x=(int)(Math.random()*1024);
 				int y=(int)(Math.random()*768);
 				r.mouseMove(x,y);
 				r.delay(10);
-			}
+			}*/
         } catch(Exception e) {
             e.printStackTrace();
         }
