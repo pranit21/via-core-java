@@ -2,10 +2,7 @@
 import java.applet.*;
 import java.awt.*;
 import java.awt.event.*;
-/*
-<applet code="AnonymousInnerClassDemo" width=200 height=100>
-</applet>
-*/
+
 public class AnonymousInnerClassDemo extends Frame {
 	public AnonymousInnerClassDemo() {
 		setSize(600, 600);

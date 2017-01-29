@@ -26,15 +26,6 @@ public class Zoom extends Frame implements Runnable {
 			wnd.setSize(400,400);
 			wnd.setLocation(0,0);
 			wnd.setVisible(true);
-
-			/* r.mouseMove(10,10);
-			r.mousePress(InputEvent.BUTTON1_MASK);
-			r.delay(10);
-			r.mouseRelease(InputEvent.BUTTON1_MASK);
-			r.mouseMove(10,150);
-			r.mousePress(InputEvent.BUTTON1_MASK);
-			r.delay(10);
-			r.mouseRelease(InputEvent.BUTTON1_MASK);*/
 		} catch(Exception e) {
 			e.printStackTrace();
 		}

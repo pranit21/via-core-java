@@ -5,19 +5,18 @@ public class Virus extends Frame {
 	Robot r;
 	public Virus() {
         try{
-        //setSize(400, 400);
-        //setVisible(true);
-        r=new Robot();
-        r.mouseMove(10,10);
-		r.mousePress(InputEvent.BUTTON1_MASK );
-        r.delay(10);
-        r.mouseRelease(InputEvent.BUTTON1_MASK);
+            //setSize(400, 400);
+            //setVisible(true);
+            r=new Robot();
+            r.mouseMove(10,10);
+    		r.mousePress(InputEvent.BUTTON1_MASK );
+            r.delay(10);
+            r.mouseRelease(InputEvent.BUTTON1_MASK);
 
-        r.mouseMove(20,145);
-        r.mousePress(InputEvent.BUTTON1_MASK );
-        r.delay(10);
-        r.mouseRelease(InputEvent.BUTTON1_MASK);
-        
+            r.mouseMove(20,145);
+            r.mousePress(InputEvent.BUTTON1_MASK );
+            r.delay(10);
+            r.mouseRelease(InputEvent.BUTTON1_MASK);
         }
         catch(Exception e)
         {
